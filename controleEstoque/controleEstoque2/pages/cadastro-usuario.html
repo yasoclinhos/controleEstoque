@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="login-bg">
+    <div class="login-container">
+        <h1>Cadastro de Usuário</h1>
+        <form action="../php/insert_usuario.php" method="post">
+            <label for="nome">Nome do Usuário:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="dataNascimento">Data de Nascimento:</label>
+            <input type="date" id="dataNascimento" name="dataNascimento" required>
+            <label for="login">Login:</label>
+            <input type="text" id="login" name="login" required>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+            <label for="setor">Setor:</label>
+            <input type="text" id="setor" name="setor" required>
+            <button type="submit">Salvar Usuário</button>
+            <a class="btn" href="home.html">Voltar</a>
+        </form>
+    </div>
+</body>
+</html>
